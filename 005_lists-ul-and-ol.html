@@ -6,6 +6,31 @@
 
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Listas</title>
+
+    <style>
+        section {
+            border: 2px solid black;
+            margin: 20px 30px;
+            padding: 15px 25px;
+        }
+
+        .title-list {
+                border-bottom: 5px solid rgb(212, 183, 239);
+                width: 200px;
+                text-align: center;
+            }
+
+        .abbr-list {
+            text-decoration: none;
+        }
+
+        .abbr-item {
+            border-bottom: 3px solid rgb(212, 183, 239);
+            width: 100px;
+            padding: 5px 0px;
+
+        }
+    </style>
 </head>
 <body>
     <h1>Trabalhando com Listas</h1>
@@ -110,17 +135,17 @@
     Esse exercício faz uma lista de coisas que podem ser adicionadas em uma página. O desafio aqui é arrumar uma maneira que, ao passar o mouse sobre um termo, mostre qual é a tag utilizada para fazer isso.
 
     <section>
-        <h1>Tags em HTML</h1>
+        <h1 class="title-list">Tags em HTML</h1>
         <p>Em HTML5, podemos inserir os elementos da lista a seguir. Passe o mouse sobre os termos para descobrir qual tag deverá utilizar em cada caso.</p>
 
             <ul type="square">
-                <abbr title="Use a tag <p>"><li>Parágrafos</li></abbr>
-                <abbr title="Use a tag <h1>, <h2>, <h3>, <h4>, <h5>, <h6>"><li>Títulos</li></abbr>
-                <abbr title="Use a tag <img>"><li>Imagens</li></abbr>
-                <abbr title="Use a tag <abbr>"><li>Abreviação</li></abbr>
-                <abbr title="Use a tag <code>"><li>Código-Fonte</li></abbr>
-                <abbr title="Use a tag <ol>"><li>Listas Numeradas</li></abbr>
-                <abbr title="Use a tag <ul>"><li>Listas com demarcadores</li></abbr>
+                <abbr class="abbr-list" title="Use a tag <p>"><li class="abbr-item">Parágrafos</li></abbr>
+                <abbr class="abbr-list" title="Use a tag <h1>, <h2>, <h3>, <h4>, <h5>, <h6>"><li class="abbr-item">Títulos</li></abbr>
+                <abbr class="abbr-list" title="Use a tag <img>"><li class="abbr-item">Imagens</li></abbr>
+                <abbr class="abbr-list" title="Use a tag <abbr>"><li class="abbr-item">Abreviação</li></abbr>
+                <abbr class="abbr-list" title="Use a tag <code>"><li class="abbr-item">Código-Fonte</li></abbr>
+                <abbr class="abbr-list" title="Use a tag <ol>"><li class="abbr-item">Listas Numeradas</li></abbr>
+                <abbr class="abbr-list" title="Use a tag <ul>"><li class="abbr-item">Listas com demarcadores</li></abbr>
             </ul>
     </section>
 
