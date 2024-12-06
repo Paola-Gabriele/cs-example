@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <style>
+        section {
+                border: 2px solid black;
+                margin: 20px 30px;
+                padding: 15px 40px;
+            }
+    </style>
+
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">    
     <title>Áudio</title>
 </head>
 <body>
-    <h1>Reprodução de Áudio</h1>
-    <audio preload="metadata" controls>
-        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
-        <source src="midia/happy-mistake.ogg" type="audio/ogg">
-        <source src="midia/happy-mistake.wav" type="audio/wav">
-    </audio>
-    <p>Observação: Reprodução de mídia não suportada. <a href="midia/happy-mistake.mp3">Clique aqui</a>para baixar o arquivo.</p>
+    <section>
+        <h1>Reprodução de Áudio</h1>
+        <audio preload="metadata" controls>
+            <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+            <source src="midia/happy-mistake.ogg" type="audio/ogg">
+            <source src="midia/happy-mistake.wav" type="audio/wav">
+        </audio>
+        <p>Observação: Reprodução de mídia não suportada. <a href="midia/happy-mistake.mp3">Clique aqui</a>para baixar o arquivo.</p>
+    </section>
 </body>
 </html>
