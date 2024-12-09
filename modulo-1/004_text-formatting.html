@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+            <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+            <title>Formatação de Textos</title>
+            <style>
+
+            section {
+                border: 2px solid black;
+                margin: 20px 30px;
+                padding: 15px 40px;
+            }
+    
+            mark {
+                background-color: #f2e744;
+            }
+
+            blockquote {
+                border-left: 5px solid rgb(212, 183, 239);
+                padding-left: 15px;
+            }
+
+            abbr {
+                text-decoration: none;
+                border-bottom: 5px solid rgb(212, 183, 239);
+            }
+            </style>
+        </head>
+        <body>
+            <!-- dica: CTRL+SHIFT+P para usar o - Emmet: Wrap with Abbreviation ou Quebrar Linha com Abreviação - para cercar uma parte do código com as tags desejadas. -->
+
+            <section>
+                <h1>Principais formatações</h1>
+
+                <h2>Negrito / Destaque</h2>
+                <p>
+                Nesta frase temos um <b>termo em negrito</b> usando a tag B (não
+                semântica).
+                </p>
+                <p>
+                Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag
+                STRONG (semântica).
+                </p>
+
+                <h2>Itálico / Ênfase</h2>
+                <p>
+                Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não
+                semântica).
+                </p>
+                <p>
+                Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM
+                (semântica).
+                </p>
+
+                <h2>Texto marcado</h2>
+                <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK.</p>
+                <p>
+                E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.
+                </p>
+
+                <h2>Texto grande e pequeno</h2>
+                <p>
+                Estamos criando um <big>texto grande</big> e um
+                <small>texto pequeno</small> nesse parágrafo.
+                </p>
+
+                <h2>Texto deletado</h2>
+                <p>
+                Podemos marcar <del>um texto como excluído</del> para indicar que ele deve
+                ser lido, mas não considerado.
+                </p>
+
+                <h2>Texto inserido</h2>
+                <p>
+                Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e
+                indicar que ele foi adicionado depois.
+                </p>
+                <p>Existe também o <u>sublinhado</u> com a tag U (não semântica)</p>
+
+                <h2>Texto sobrescrito</h2>
+                <p>Para inserir coisas do tipo <strong>x<sup>20</sup>+3</strong></p>
+
+                <h2>Texto subscrito</h2>
+                <p>Para inserir coisas do tipo <strong>H<sub>2</sub>O</strong></p>
+
+                <h2>Código-fonte</h2>
+                <p>
+                O comando <strong><code>document.getElementById('test')</code></strong> é
+                escrita na linguagem <strong>JavaScript</strong>.
+                </p>
+
+                <p>
+                Utilizando o elemento <mark><code>&lt;pre&gt;&lt;&sol;pre&gt;</code></mark
+                >.
+                </p>
+                <pre>
+                                <code>
+                                    num = int(input('Digite um número'))
+                                    if num % 2 == 0:
+                                        print(f'O número {num} é PAR'.)
+                                    else
+                                        print(f'O número {num} é ÍMPAR'.)
+                                    print('Fim do Programa!')
+                                </code>
+                                </pre>
+
+                <h2>Citações Simples</h2>
+                <p>
+                Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q>
+                </p>
+
+                <h2>Citações Completas</h2>
+                <p>
+                De acordo com Diego Eis e Elcio Ferreira, em seu livro HTML5 e CSS3 com
+                farinha e pimenta:
+                </p>
+                <blockquote
+                cite="https://www.cin.ufpe.br/~dfop/Arquivos/Pacote%20Web/HTML5%20e%20CSS3%20com%20Farinha%20e%20Pimenta%20Diego%20Eis%20e%20Elcio%20Ferreira.pdf"
+                >
+                O HTML marca a informação dando-lhe significado. Esse significado é
+                reconhecido por robôs, sistemas, aplicações ou outros meios que podem
+                acessar e reutilizar a informação publicada. A informação precisa ser
+                acessível a qualquer hora, de qualquer lugar e principalmente, por
+                qualquer dispositivo e meio de acesso. Como já dizia o antigo ditado do
+                desenvolvimento web: O conteúdo é o Rei.
+                </blockquote>
+
+                <h2>Abreviações</h2>
+                <p>
+                Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e
+                <abbr title="Cascade Style Sheets">CSS</abbr> por meio do Curso em Vídeo.
+                </p>
+            </section>
+        </body>
+    </html>
